@@ -10,67 +10,64 @@ CashSwap provides a clean, mobile-friendly interface for posting and viewing exc
 
 * **➕ Post New Requests:** Easily post a request detailing the amount (in ₹), what you **Have** (Cash or UPI) and what you **Need** (Cash or UPI), along with your contact information and meeting details.
 * **📋 Real-Time Request List:** View all active exchange requests, sorted by the most recent.
-* **🔍 Search & Filter:** Quickly find specific requests by searching through details or filtering by transaction type (`Cash -> UPI` or `UPI -> Cash`).
-* **🔒 Local Storage:** All requests are stored locally in your browser's **Local Storage**, meaning they persist even after you close and reopen the app.
-* **🗑️ Delete Requests:** Users can delete their own requests once the transaction is complete.
-* **🚫 Demo Contact:** Contact information is revealed in a modal (in a real-world scenario, this would likely be secured or linked to a private chat).
+* **🔍 Search & Filter:** Quickly find specific requests by searching through details or filtering by transaction type (`Cash → UPI` or `UPI → Cash`).
+* **🔒 Local Storage Persistence:** All requests are stored locally in the user's browser's **Local Storage**, meaning they persist even after closing and reopening the application.
+* **🗑️ Delete Requests:** Users can remove their requests once the transaction is complete.
 
----
+***
 
 ## 🚀 How to Use
 
-The application is a single HTML file with embedded CSS (Bootstrap + custom) and JavaScript.
+The application is a single HTML file with embedded styles and logic.
 
 ### Prerequisites
 
-You need a modern web browser (Chrome, Firefox, Safari, Edge) that supports **HTML5**, **CSS3**, and **JavaScript ES6+**.
+You need a modern web browser (Chrome, Firefox, Safari, Edge).
 
 ### Getting Started
 
-1.  **Clone the repository (or save the file):**
+1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YourUsername/cashswap.git](https://github.com/YourUsername/cashswap.git)
+    git clone [https://github.com/NSaiHanuman/Swap-Cash.git](https://github.com/NSaiHanuman/Swap-Cash.git)
+    cd Swap-Cash
     ```
-    *(Assuming this project is hosted on GitHub.)*
-2.  **Open the file:** Navigate to the cloned folder and open the `index.html` file directly in your web browser.
+2.  **Open the file:** Open the `index.html` file directly in your web browser.
 
-### Posting a Request
+### Posting an Exchange Request
 
 1.  Fill in the **Amount** (e.g., `500`).
 2.  Select what you **Have** (e.g., `Cash`).
-3.  Select what you **Need** (e.g., `UPI`). *Note: Have and Need cannot be the same.*
+3.  Select what you **Need** (e.g., `UPI`). (*Note: "Have" and "Need" must be different.*)
 4.  Enter your **Contact Number**.
 5.  Add any **Additional Details** (location, time, notes).
-6.  Click the **Post Request** button. Your request will immediately appear in the list.
+6.  Click **Post Request**.
 
 ### Fulfilling a Request
 
-1.  Browse or use the search/filter to find a request that matches what you can offer.
-2.  Click the **Contact** button on the request card to view the contact details.
-3.  Reach out to the poster and arrange the swap!
-4.  Once the transaction is complete, use the **Trash** icon to delete the request.
+1.  Browse or use the search/filter tools to find a request you can help fulfill.
+2.  Click the **Contact** button on the request card.
+3.  Reach out to the poster using the provided contact details to arrange the swap.
 
----
+***
 
 ## 🛠️ Technology Stack
 
-This project is a classic example of a "Zero-Dependency" client-side application (excluding external CDN libraries).
+This project is a pure client-side application utilizing minimal external dependencies:
 
-* **HTML5:** Structure and content.
-* **CSS3:** Styling and layout.
-* **JavaScript (ES6+):** Application logic, form handling, and data manipulation.
-* **Bootstrap 5.3:** Responsive design and UI components.
-* **Bootstrap Icons & Font Awesome:** Used for various application icons.
-* **Browser Local Storage:** Used as the persistent data store for all exchange requests.
+* **HTML5**
+* **CSS3** (Custom styles + **Bootstrap 5.3** for layout/components)
+* **Vanilla JavaScript (ES6+**): Handles all logic, form validation, data management, and DOM rendering.
+* **Local Storage:** Used as the persistent data store for all exchange requests.
+* **Font Awesome & Bootstrap Icons:** Used for visual cues and iconography.
 
----
+***
 
-## 💡 Pro Tip for Users
+## 💡 Safety & Disclaimer
 
-> **Safety First:** Always meet in a public, well-lit area on campus (like the library entrance or a busy cafeteria). Always verify the payment (cash count or UPI credit alert) before completing your side of the exchange.
+> **Safety First:** Always meet in public, high-traffic areas on campus and verify payment before completing the exchange. The app is a bulletin board and does not handle transactions.
 
----
+***
 
 ## 📄 License
 
-This project is licensed under the **MIT License**. See the `LICENSE` file for details.
+This project is licensed under the **MIT License**.
